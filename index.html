@@ -10,11 +10,19 @@
       rel="stylesheet"
       type="text/css"
     />
-    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- google font manrope -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <!-- header section -->
-    <header>
+    <header class="container mx-auto">
+      <!-- navbar section -->
       <nav>
         <div class="navbar bg-base-100">
           <div class="navbar-start">
@@ -39,16 +47,24 @@
                 tabindex="0"
                 class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
               >
-                <li><a>Item 1</a></li>
-                <li><a>Item 3</a></li>
+                <li><a>Home</a></li>
+                <li><a>About</a></li>
+                <li><a>Pages</a></li>
+                <li><a>Blog</a></li>
+                <li><a>Contact</a></li>
               </ul>
             </div>
-            <a class="btn btn-ghost text-xl">daisyUI</a>
+            <a href="#">
+              <img src="Images/logo.png" alt="" />
+            </a>
           </div>
           <div class="navbar-center hidden lg:flex">
             <ul class="menu menu-horizontal px-1">
-              <li><a>Item 1</a></li>
-              <li><a>Item 3</a></li>
+              <li><a>Home</a></li>
+              <li><a>About</a></li>
+              <li><a>Pages</a></li>
+              <li><a>Blog</a></li>
+              <li><a>Contact</a></li>
             </ul>
           </div>
           <div class="navbar-end">
@@ -68,7 +84,10 @@
                 />
               </svg>
             </button>
-            <a class="btn">Button</a>
+            <a
+              class="btn bg-hockey-primary hover:bg-amber-400 text-white hover:text-black text-lg"
+              >Get Started</a
+            >
           </div>
         </div>
       </nav>
@@ -77,5 +96,18 @@
     <main></main>
     <!-- footer section -->
     <footer></footer>
+    <!-- custom tailwind elements -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              "hockey-primary": "#FF4240",
+            },
+          },
+        },
+      };
+    </script>
   </body>
 </html>

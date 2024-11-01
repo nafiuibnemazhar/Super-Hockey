@@ -1,3 +1,12 @@
 body {
   font-family: "Manrope", sans-serif;
 }
+
+/* ".inherited-styles-for-exported-element" is a generated class for the inherited styles of the exported element, feel free to rename it. */
+
+.inherited-styles-for-exported-element {
+  color: #333;
+  font-family: CerebriSans-Regular, -apple-system, BlinkMacSystemFont, Roboto,
+    sans-serif;
+  font-size: 100%;
+}
